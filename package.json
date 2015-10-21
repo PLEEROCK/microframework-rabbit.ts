@@ -1,6 +1,6 @@
 {
   "name": "microframework-rabbit.ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rabbit.ts integration with microframework",
   "license": "Apache-2.0",
   "readmeFilename": "README.md",

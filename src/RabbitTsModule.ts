@@ -91,9 +91,9 @@ export class RabbitTsModule implements Module {
             promises.push(this._contextManager.closeContext());
 
         if (this.configuration.contexts)
-            promises.concat(this.configuration
-                .contexts
-                .map(context => this._contextManager.closeContext(context.name)));
+            promises = promises.concat(this.configuration.contexts.map(context => {
+                return this._contextManager.closeContext(context.name);
+            }));
 
         return Promise.all(promises);
     }
@@ -104,7 +104,7 @@ export class RabbitTsModule implements Module {
             promises.push(this._contextManager.createContext(this.configuration.context));
 
         if (this.configuration.contexts) {
-            promises.concat(this.configuration.contexts.map(context => {
+            promises = promises.concat(this.configuration.contexts.map(context => {
                 return this._contextManager.createContext(context.name, context.options);
             }));
         }
