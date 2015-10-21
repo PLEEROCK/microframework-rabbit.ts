@@ -1,0 +1,50 @@
+{
+  "name": "microframework-rabbit.ts",
+  "version": "0.0.1",
+  "description": "Rabbit.ts integration with microframework",
+  "license": "Apache-2.0",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Umed Khudoiberdiev",
+    "email": "zarrhost@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PLEEROCK/microframework-rabbit.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PLEEROCK/microframework-rabbit.ts/issues"
+  },
+  "tags": [
+    "microframework",
+    "rabbit.ts"
+  ],
+  "typings": "./microframework-rabbit.ts.d.ts",
+  "typescript": {
+    "definitions": [
+      "microframework-rabbit.ts.d.ts"
+    ]
+  },
+  "dependencies": {
+    "microframework": ">=0.1.0",
+    "t-configurator": ">=0.0.5",
+    "typedi": ">=0.0.4",
+    "rabbit.ts": ">=0.0.3"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "dts-generator": "^1.5.0",
+    "fs": "0.0.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-shell": "^0.5.0",
+    "gulp-typescript": "^2.9.0",
+    "run-sequence": "^1.1.4",
+    "tsd": "^0.6.4",
+    "typescript": "^1.6.2"
+  },
+  "scripts": {
+    "postversion": "./node_modules/.bin/gulp package"
+  }
+}
