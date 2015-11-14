@@ -74,7 +74,7 @@ export class RabbitTsModule implements Module {
 
     private getListenerDirectories(): string[] {
         if (!this.configuration || !this.configuration.listenersDirectories)
-            return [this.options.frameworkSettings.baseDirectory + '/' + RabbitTsModule.DEFAULT_LISTENER_DIRECTORY];
+            return [this.getSourceCodeDirectory() + RabbitTsModule.DEFAULT_LISTENER_DIRECTORY];
 
         return this.configuration.listenersDirectories;
     }
@@ -109,6 +109,10 @@ export class RabbitTsModule implements Module {
             }));
         }
         return Promise.all(promises);
+    }
+
+    private getSourceCodeDirectory() {
+        return this.options.frameworkSettings.srcDirectory + '/';
     }
 
 }
