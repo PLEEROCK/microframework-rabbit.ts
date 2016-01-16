@@ -112,7 +112,7 @@ export class RabbitTsModule implements Module {
     }
 
     private getSourceCodeDirectory() {
-        return this.options.frameworkSettings.srcDirectory + '/';
+        return this.options.frameworkSettings.baseDirectory + '/';
     }
 
 }
