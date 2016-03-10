@@ -1,13 +1,13 @@
 # Rabbit.ts module for Microframework
 
-Adds integration between [rabbit.ts](http://github.com/PLEEROCK/rabbit.ts) and 
-[microframework](https://github.com/PLEEROCK/microframework).
+Adds integration between [rabbit.ts](http://github.com/pleerock/rabbit.ts) and
+[microframework](https://github.com/pleerock/microframework).
 
 ## Usage
 
 1. Install module:
 
-    `npm install --save microframework-rabbit.ts`
+    `npm install microframework-rabbit.ts --save`
 
 2. Simply register module in the microframework when you are bootstrapping it.
     
@@ -28,7 +28,13 @@ Adds integration between [rabbit.ts](http://github.com/PLEEROCK/rabbit.ts) and
             
     ```
 
-3. Now you can use [rabbit.ts](https://github.com/PLEEROCK/rabbit.ts) module in your microframework.
+3. ES6 features are used, so you may want to install [es6-shim](https://github.com/paulmillr/es6-shim) too:
+
+    `npm install es6-shim --save`
+
+    you may need to `require("es6-shim");` in your app.
+
+4. Now you can use [rabbit.ts](https://github.com/pleerock/rabbit.ts) module in your microframework.
 
 ## Todos
 

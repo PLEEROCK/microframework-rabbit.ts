@@ -13,7 +13,7 @@ export class RabbitTsModule implements Module {
     // Constants
     // -------------------------------------------------------------------------
 
-    public static DEFAULT_LISTENER_DIRECTORY = 'subscribers';
+    public static DEFAULT_LISTENER_DIRECTORY = "subscribers";
 
     // -------------------------------------------------------------------------
     // Properties
@@ -28,11 +28,11 @@ export class RabbitTsModule implements Module {
     // -------------------------------------------------------------------------
 
     getName(): string {
-        return 'RabbitTsModule';
+        return "RabbitTsModule";
     }
 
     getConfigurationName(): string {
-        return 'rabbit.ts';
+        return "rabbit.ts";
     }
 
     isConfigurationRequired(): boolean {
@@ -112,7 +112,7 @@ export class RabbitTsModule implements Module {
     }
 
     private getSourceCodeDirectory() {
-        return this.options.frameworkSettings.baseDirectory + '/';
+        return this.options.frameworkSettings.baseDirectory + "/";
     }
 
 }
