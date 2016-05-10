@@ -25,9 +25,7 @@
     ]
   },
   "dependencies": {
-    "microframework": "~0.3.0",
-    "configurator.ts": "~0.1.0",
-    "typedi": "~0.1.0",
+    "microframework": "~0.5.1",
     "rabbit.ts": "~0.1.0"
   },
   "devDependencies": {
