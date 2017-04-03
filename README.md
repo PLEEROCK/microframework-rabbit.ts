@@ -1,3 +1,5 @@
+> This repository is deprecated. Microframework architecure has changed. Please consider writing your own module for a newer versions of microframework.
+
 # Rabbit.ts module for Microframework
 
 Adds integration between [rabbit.ts](http://github.com/PLEEROCK/rabbit.ts) and 
